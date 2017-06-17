@@ -14,16 +14,29 @@ Formula for BMI
  
  1 Killogram = 2.20462 Lbs
  
- 
+
+**Converting Numbers**
+
  In the Sample, I have a Converter - While we can just do it ourselves, lets do it a longer way, so the user is more engaged.
  
  
+Lets say you have 3 Feet, that would be about 1Meter, so a 6ft person would be about 2 Meters.
 
-Private Sub Command1_Click()
-    Label4.Caption = BMI(Text1.Text, Text2.Text)
-End Sub
+We have to convert Feet to Meters.
 
-Private Function BMI(height, weight)
-      BMIValue = (weight) / (height ^ 2)
-      BMI = Format(BMIValue, "0.00")
-End Function
+If someone is 100lbs it would be about 45KG.
+
+To make a little simplier, lets do a formula. 
+
+`xFt/3.288084`
+
+Rounding will be fine also, but for this tutorial we are using the full number.
+
+For KG its pretty well the same. 
+
+`xLbs/2.20462`
+
+**Putting everything together**
+
+
+
